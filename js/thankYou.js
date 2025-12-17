@@ -34,7 +34,7 @@ async function sendFormDataFromLocalStorage() {
 
   try {
     const res = await fetch(
-      "https://script.google.com/macros/s/AKfycbzAZYey17jlk6abE88IOkx6nZk0tuM4wmCx3aHsNF8bQ4ZDxOgJGERPmqZ_Cci0eeENyg/exec",
+      "https://script.google.com/macros/s/AKfycbxeDIKZK-yC-q5qxrAtdsmubi6_GgEjVRlSbhWJhVyAWEug6z8crAXMDn4gSmf4a4yeVg/exec",
       { method: "POST", body: fd }
     );
 
