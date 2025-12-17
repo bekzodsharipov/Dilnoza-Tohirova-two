@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So'rovnoma</title>
+    <style>
+      * {margin: 0;padding: 0;box-sizing: border-box;}.container {max-width: 490px;width: 100%;padding-left: 10px;padding-right: 10px;margin-left: auto;margin-right: auto;display: flex;flex-direction: column;align-items: center;padding-top: 28px;font-family: sans-serif;position: relative;}.subtitle {font-family: Italianno, sans-serif;font-weight: 400;font-size: clamp(30px, 7vw, 32px);line-height: 100%;color: #BB0707;margin-bottom: 33px;}.title {font-family: "Lalezar", sans-serif;font-weight: 400;font-size: clamp(21.5px, 6.5vw, 32px);line-height: 120%;text-align: center;text-transform: uppercase;margin-bottom: 17px;}.title span {color: #BB0707;}.contact__container {width: 100%;margin-left: auto;margin-right: auto;padding: clamp(15px, 4vw, 16px) 18px;border: 2px solid #BB0707;border-radius: clamp(18px, 5vw, 35px);background: #fff;margin-bottom: 106px;max-width: 382px;}.contact__title {font-family: "Lalezar", sans-serif;text-align: center;font-weight: 400;font-size: 28px;text-transform: uppercase;line-height: 120%;margin-bottom: 20px;}.contact__form {display: flex;flex-direction: column;gap: clamp(15px, 4vw, 20px);}.contact__form__label {display: flex;flex-direction: column;gap: clamp(5px, 1.5vw, 7px);font-family: "Montserrat", sans-serif;font-size: clamp(12px, 4vw, 14px);font-weight: 600;}.contact__form__input {background-color: #F6F6F6;border: 1px solid #b9b8b8;padding: clamp(14px, 3.5vw, 17px) clamp(8px, 2vw, 10px);border-radius: 7px;width: 100%;display: block;}.label2 .contact__form__input {display: flex;align-items: center;padding: 0;overflow: hidden;}.contact__form__label__998 {padding: clamp(13px, 3.2vw, 16px);background: #dddddd;border-radius: 7px;flex: 0 0 auto;font-family: Involve, sans-serif;white-space: nowrap;}.contact__form__label input[type="text"], #phone {border: none;outline: none;background: transparent;width: 100%;font-size: clamp(11px, 5vw, 12px);}.contact__form__label input[type="text"] {padding: clamp(14px, 3.5vw, 17px) clamp(8px, 2vw, 10px);}#phone {height: 100%;padding: clamp(14px, 3.5vw, 17px) 10px;}.contact__form__label input::placeholder {color: rgba(0, 0, 0, .45);}.error-text {color: #e53935;font-size: 12px;margin-top: 4px;display: block;}.input-error {border-color: #BB0707 !important;}.contact__btn {font-family: Montserrat, sans-serif;font-weight: 700;font-size: 24px;line-height: 100%;text-align: center;text-transform: uppercase;color: white;padding: 25px 0;max-width: 334px;width: 100%;background: linear-gradient(90deg, #BB0707 0%, #D50606 51%, #BB0707 100%);box-shadow: 0px 5px 0px 0px #610606;border-radius: 20px;border: none;cursor: pointer;text-decoration: none;display: flex;align-items: center;justify-content: center;margin: 0 auto;margin-bottom: 10px;}
+    </style>
+    <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="./css/modal.css">
+    </noscript>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="subtitle">Dilnoza Tohirova</h3>
+
+        <h1 class="title"><span>kursga qatnashish uchun</span> <br> quyidagi anketani to’ldiring</h1>
+
+        <div class="contact__container">
+            <h2 class="contact__title">
+                Anketa
+            </h2>
+            <form id="leadForm" class="contact__form">
+                <label class="contact__form__label">
+                    Ismingizni kiriting
+                    <input name="name" id="name" type="text"
+                        style="border: 1px solid #B9B8B8; background-color: #F6F6F6;" placeholder="Ismingiz"
+                        class="contact__form__input" autocomplete="name" />
+                    <span class="error-text" id="nameError"></span>
+                </label>
+
+                <label class="contact__form__label label2">
+                    Telefon raqamingiz:
+                    <div class="contact__form__input">
+                        <div class="contact__form__label__998" style="font-weight: 400;">+998</div>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="00 000 00 00" />
+                    </div>
+                    <span class="error-text" id="phoneError"></span>
+                </label>
+                <button type="submit" class="contact__btn">yuborish</button>
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <script defer src="./js/app.js"></script>
+</body>
+
+</html>
